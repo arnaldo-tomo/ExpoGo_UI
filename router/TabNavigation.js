@@ -26,7 +26,7 @@ function HomeScreen() {
                 </View>
             </View>
 
-            <ScrollView style={{ marginHorizontal: 15, marginVertical: 20 }} showsVerticalScrollIndicator={false}>
+            <ScrollView style={{ marginHorizontal: 15, paddingTop: 15 }} showsVerticalScrollIndicator={false}>
                 {/* Header  */}
                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                     <View style={{ alignItems: 'center', flexDirection: 'row' }}>
@@ -65,16 +65,20 @@ function HomeScreen() {
                     <Text style={{ fontWeight: 'bold', color: "gray" }}>Clear</Text>
                 </View>
                 <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
-                    <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
-                        <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
-                            <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
-                        </TouchableOpacity>
-                        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Projetco 1 </Text>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
+                            <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
+                                <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
+                            </TouchableOpacity>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Power Gym </Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Ionicons name='chevron-forward' size={20} color={'gray'} />
                         </View>
                     </View>
-                    <View style={{ backgroundColor: 'gray', marginBottom: 15, marginTop: 15, height: 0.5, width: width }}></View>
-
+                    <View style={{ backgroundColor: 'gray', marginBottom: 10, marginTop: 10, height: 0.5, }}></View>
                 </View>
 
 
@@ -85,16 +89,20 @@ function HomeScreen() {
                     </View>
                 </View>
                 <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
-                    <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
-                        <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
-                            <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
-                        </TouchableOpacity>
-                        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Projetco 1 </Text>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
+                            <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
+                                <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
+                            </TouchableOpacity>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Instagram Ui </Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Ionicons name='chevron-forward' size={20} color={'gray'} />
                         </View>
                     </View>
-                    <View style={{ backgroundColor: 'gray', marginBottom: 15, marginTop: 15, height: 0.5, width: width }}></View>
-
+                    <View style={{ backgroundColor: 'gray', marginBottom: 10, marginTop: 10, height: 0.5, }}></View>
                 </View>
 
 
@@ -105,16 +113,20 @@ function HomeScreen() {
                     </View>
                 </View>
                 <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
-                    <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
-                        <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
-                            <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
-                        </TouchableOpacity>
-                        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                            <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Projetco 1 </Text>
+                    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                        <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
+                            <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
+                                <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20, borderWidth: 0.5 }} />
+                            </TouchableOpacity>
+                            <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
+                                <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Projetco 1 </Text>
+                            </View>
+                        </View>
+                        <View>
+                            <Ionicons name='chevron-forward' size={20} color={'gray'} />
                         </View>
                     </View>
-                    <View style={{ backgroundColor: 'gray', marginBottom: 15, marginTop: 15, height: 0.5, width: width }}></View>
-
+                    <View style={{ backgroundColor: 'gray', marginBottom: 10, marginTop: 10, height: 0.5, }}></View>
                 </View>
             </ScrollView >
         </View >
