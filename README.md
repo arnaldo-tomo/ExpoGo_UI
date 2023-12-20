@@ -18,7 +18,7 @@ Se você estiver interessado em contribuir para este projeto, sinta-se à vontad
 
 1. Clone o repositório: `git clone https://github.com/arnaldo-tomo/ExpoGo_UI`
 2. Instale as dependências: `npm install`
-3. Inicie o aplicativo: `npm start`
+3. Inicie o aplicativo: `nxp expo start`
 
 ## Dependências Principais:
 
