@@ -24,7 +24,8 @@ Se você estiver interessado em contribuir para este projeto, sinta-se à vontad
 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
-- [Outras Dependências]
+- [React navigation](https://reactnavigation.org/)
+- [Async Storage](https://react-native-async-storage.github.io/async-storage/docs/usage)
 
 ## Contato:
 
