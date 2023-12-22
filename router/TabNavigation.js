@@ -15,7 +15,14 @@ function HomeScreen({ navigation, colorScheme }) {
 
     return (
         <View style={[{ flex: 1, backgroundColor: Thema == 'dark' ? darkBg : light }]}>
-            <StatusBar style='auto' backgroundColor={Thema == 'dark' ? dark : light} />
+            {Thema == 'dark' ?
+                <>
+                    <StatusBar style='light' backgroundColor={Thema == 'dark' && dark} />
+                </>
+                :
+                <StatusBar style='dark' backgroundColor={Thema == 'light' && light} />
+
+            }
             <SafeAreaView style={{ flex: 1, }} >
                 {/* Header  */}
                 <View style={[{ backgroundColor: Thema == 'dark' ? dark : light, width: width, marginTop: 30, paddingBottom: 10 }]}>
@@ -46,7 +53,7 @@ function HomeScreen({ navigation, colorScheme }) {
                     <View style={[{ backgroundColor: Thema == 'dark' ? dark : light, marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }]}>
                         <View style={{ paddingLeft: 20, paddingRight: 20 }}>
                             <Text style={[{ fontWeight: 'normal', marginBottom: 10, marginTop: 10, color: Thema == 'dark' && darkText }]}>Start a local development server with:</Text>
-                            <View style={{ height: 50, borderWidth: 0.3, borderRadius: 5, padding: 10, backgroundColor: '#F8F9FA', marginBottom: 10 }}>
+                            <View style={{ height: 50, borderWidth: 0.3, borderRadius: 5, padding: 10, backgroundColor: '#F8F9FA', marginBottom: 10, borderWidth: 0, }}>
                                 <Text style={{ fontWeight: 'normal' }}>npx expo start</Text>
                             </View>
                             <Text style={[{ fontWeight: 'normal', fontSize: 13, color: Thema == 'dark' && darkText }]}>Select the local server wheen it appears here.</Text>
@@ -70,14 +77,14 @@ function HomeScreen({ navigation, colorScheme }) {
                         </View>
                         <Text style={{ fontWeight: 'bold', color: "gray" }}>Clear</Text>
                     </View>
-                    <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
+                    <View style={[{ backgroundColor: Thema == 'dark' ? dark : light, marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }]}>
                         <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
-                                    <Image source={require('../assets/logo_expo.png')} style={{ width: 30, height: 30, borderWidth: 0.5 }} />
+                                    <Image source={require('../assets/logo_expo.png')} style={{ width: 30, height: 30, borderWidth: 0.5 }} tintColor={Thema == 'dark' ? light : dark} />
                                 </TouchableOpacity>
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Power Gym </Text>
+                                    <Text style={[{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }]}> Power Gym </Text>
                                 </View>
                             </View>
                             <View>
@@ -92,7 +99,7 @@ function HomeScreen({ navigation, colorScheme }) {
                                     <Image source={require('../assets/favicon.png')} style={{ width: 30, height: 30, borderWidth: 0.5 }} />
                                 </TouchableOpacity>
                                 <View style={{ flexDirection: 'column', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Snack </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}>Snack </Text>
                                     <TouchableOpacity style={{ backgroundColor: '#EDF6FF', borderRadius: 5 }}>
                                         <Text style={{ color: '#0093ED', }}> Channel:default </Text>
                                     </TouchableOpacity>
@@ -108,10 +115,10 @@ function HomeScreen({ navigation, colorScheme }) {
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 10, borderRadius: 5, borderColor: 'gray' }}>
-                                    <Image source={require('../assets/logo_expo.png')} style={{ width: 30, height: 30, borderWidth: 0.5 }} />
+                                    <Image source={require('../assets/logo_expo.png')} style={{ width: 30, height: 30, borderWidth: 0.5 }} tintColor={Thema == 'dark' ? light : dark} />
                                 </TouchableOpacity>
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Arnaldo REST API </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}> Arnaldo REST API </Text>
                                 </View>
                             </View>
                             <View>
@@ -128,12 +135,12 @@ function HomeScreen({ navigation, colorScheme }) {
                         </View>
                     </View>
 
-                    <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
+                    <View style={[{ backgroundColor: Thema == 'dark' ? dark : light, marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }]}>
 
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Instagram Ui/UX </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}> Instagram Ui/UX </Text>
                                 </View>
                             </View>
                             <View>
@@ -147,7 +154,7 @@ function HomeScreen({ navigation, colorScheme }) {
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
 
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Recat TailWinds </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}> Recat TailWinds </Text>
                                 </View>
                             </View>
                             <View>
@@ -160,7 +167,7 @@ function HomeScreen({ navigation, colorScheme }) {
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
 
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}> Njira </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}> Njira </Text>
                                 </View>
                             </View>
                             <View>
@@ -172,7 +179,7 @@ function HomeScreen({ navigation, colorScheme }) {
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: '500', color: 'gray' }}> See all Projects </Text>
+                                    <Text style={{ fontSize: 16, fontWeight: '400', color: 'gray', color: Thema == 'dark' ? light : dark }}> See all Projects </Text>
                                 </View>
                             </View>
                             <View>
@@ -189,13 +196,13 @@ function HomeScreen({ navigation, colorScheme }) {
                             <Text style={[{ fontWeight: 'bold', marginLeft: 5, color: Thema == 'dark' ? darkText : 'gray' }]}>Snacks</Text>
                         </View>
                     </View>
-                    <View style={{ backgroundColor: 'white', marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
+                    <View style={{ backgroundColor: Thema == 'dark' ? dark : light, marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }}>
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <View style={{ justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>Auht0 </Text>
-                                    <Text style={{ fontSize: 16, fontWeight: '500' }}>Exemplo duma dreciacao </Text>
-                                    <Text style={{ backgroundColor: '#F8F9FA', width: 50, padding: 5, borderRadius: 5, fontWeight: '700' }}>Draft</Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}>Auht0 </Text>
+                                    <Text style={{ fontSize: 14, fontWeight: '400', color: Thema == 'dark' ? light : dark }}>Exemplo use of Auth0 in React Native </Text>
+                                    <Text style={[{ backgroundColor: Thema == 'dark' ? dark : '#F8F9FA', width: 50, padding: 5, marginTop: 10, borderRadius: 5, fontWeight: '700', borderColor: Thema == 'dark' && darkText, borderWidth: 1, color: Thema == 'dark' ? darkText : dark }]}>Draft</Text>
                                 </View>
                             </View>
                             <View>
@@ -206,8 +213,8 @@ function HomeScreen({ navigation, colorScheme }) {
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <View style={{ justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>SlideShare</Text>
-                                    <Text style={{ backgroundColor: '#F8F9FA', width: 50, padding: 5, borderRadius: 5, fontWeight: '700' }}>Draft</Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}>SlideShare</Text>
+                                    <Text style={[{ backgroundColor: Thema == 'dark' ? dark : '#F8F9FA', width: 50, padding: 5, marginTop: 10, borderRadius: 5, fontWeight: '700', borderColor: Thema == 'dark' && darkText, borderWidth: 1, color: Thema == 'dark' ? darkText : dark }]}>Draft</Text>
                                 </View>
                             </View>
                             <View>
@@ -218,8 +225,8 @@ function HomeScreen({ navigation, colorScheme }) {
                         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                             <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 10, marginTop: 10 }}>
                                 <View style={{ justifyContent: 'space-between' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>SwitchCase</Text>
-                                    <Text style={{ backgroundColor: '#F8F9FA', width: 50, padding: 5, borderRadius: 5, fontWeight: '700' }}>Draft</Text>
+                                    <Text style={{ fontSize: 16, fontWeight: 'bold', color: Thema == 'dark' ? light : dark }}>SwitchCase</Text>
+                                    <Text style={[{ backgroundColor: Thema == 'dark' ? dark : '#F8F9FA', width: 50, padding: 5, marginTop: 10, borderRadius: 5, fontWeight: '700', borderColor: Thema == 'dark' && darkText, borderWidth: 1, color: Thema == 'dark' ? darkText : dark }]}>Draft</Text>
                                 </View>
                             </View>
                             <View>
@@ -402,12 +409,14 @@ export default function TabNavigation() {
     const Thema = useColorScheme();
     return (
         <Tab.Navigator
-            screenOptions={({ route }) => ({
+            screenOptions={({ route, focused }) => ({
+
                 headerShown: false,
 
                 tabBarStyle: {
                     paddingTop: 8,
                     backgroundColor: Thema == 'dark' ? darkBg : light
+
                 },
                 tabBarIcon: ({ focused, color, size }) => {
                     let iconName;
@@ -423,7 +432,8 @@ export default function TabNavigation() {
                     // You can return any component that you like here!
                     return <Ionicons name={iconName} size={size} color={color} />;
                 },
-                tabBarActiveTintColor: 'blue',
+                // freezeOnBlur: true,
+                tabBarActiveTintColor: '#a498ec',
                 tabBarInactiveTintColor: 'gray',
             })}
         >
