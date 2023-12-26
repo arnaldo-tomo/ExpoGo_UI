@@ -14,7 +14,7 @@ Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, 
 
 Se você estiver interessado em contribuir para este projeto, sinta-se à vontade para fazer um fork e abrir pull requests. Aceitamos contribuições de todos os níveis de habilidade!
 
-## Como Iniciar::
+## Como Iniciar::.
 
 1. Clone o repositório: `git clone https://github.com/arnaldo-tomo/ExpoGo_UI`
 2. Instale as dependências: `npm install`
