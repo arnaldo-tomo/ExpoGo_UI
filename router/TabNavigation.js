@@ -14,7 +14,8 @@ function HomeScreen({ navigation, colorScheme }) {
 
 
     return (
-        <View style={[{ flex: 1, backgroundColor: Thema == 'dark' ? darkBg : light }]}>
+        <View style={[{ flex: 1, backgroundColor: Thema == 'dark' ? darkBg : null }]}>
+
             {Thema == 'dark' ?
                 <>
                     <StatusBar style='light' backgroundColor={Thema == 'dark' && dark} />
@@ -31,9 +32,12 @@ function HomeScreen({ navigation, colorScheme }) {
                             <TouchableOpacity style={{ marginRight: 10, borderWidth: 0.3, padding: 5, borderRadius: 5, borderColor: 'gray' }}>
                                 <Image source={require('../assets/logo_expo.png')} style={{ width: 20, height: 20 }} tintColor={Thema == 'dark' ? light : darkBg} />
                             </TouchableOpacity>
-                            <Text Text style={[{ fontWeight: 'bold', fontSize: 15, color: Thema == 'dark' ? light : darkBg }]}>Expo Go</Text>
+                            <Text Text style={[{ fontWeight: 'bold', fontSize: 15, color: Thema == 'dark' ? light : dark }]}>Expo Go</Text>
                         </View>
-                        <TouchableOpacity onPress={() => navigation.navigate('Account')} style={{ backgroundColor: '#EDF6FF', borderRadius: 20, marginHorizontal: 20, width: 30, height: 30, justifyContent: 'center', alignItems: 'center' }}>
+                        <TouchableOpacity onPress={() => navigation.navigate('Account')} style={{
+                            backgroundColor: '#EDF6FF',
+                            borderRadius: 20, marginHorizontal: 20, width: 30, height: 30, justifyContent: 'center', alignItems: 'center'
+                        }}>
                             <Text style={{ fontWeight: 'bold', color: '#171A3C', fontSize: 16 }}>A</Text>
                         </TouchableOpacity>
                     </View>
@@ -52,21 +56,21 @@ function HomeScreen({ navigation, colorScheme }) {
                     {/* body count */}
                     <View style={[{ backgroundColor: Thema == 'dark' ? dark : light, marginVertical: 20, padding: 5, borderRadius: 6, borderWidth: 0.4, borderColor: 'gray', }]}>
                         <View style={{ paddingLeft: 20, paddingRight: 20 }}>
-                            <Text style={[{ fontWeight: 'normal', marginBottom: 10, marginTop: 10, color: Thema == 'dark' && darkText }]}>Start a local development server with:</Text>
+                            <Text style={[{ fontWeight: 'normal', marginBottom: 10, marginTop: 10, color: Thema == 'dark' ? darkText : dark }]}>Start a local development server with:</Text>
                             <View style={{ height: 50, borderWidth: 0.3, borderRadius: 5, padding: 10, backgroundColor: '#F8F9FA', marginBottom: 10, borderWidth: 0, }}>
                                 <Text style={{ fontWeight: 'normal' }}>npx expo start</Text>
                             </View>
-                            <Text style={[{ fontWeight: 'normal', fontSize: 13, color: Thema == 'dark' && darkText }]}>Select the local server wheen it appears here.</Text>
+                            <Text style={[{ fontWeight: 'normal', fontSize: 13, color: Thema == 'dark' ? darkText : dark }]}>Select the local server wheen it appears here.</Text>
                         </View>
                         <View style={{ backgroundColor: 'gray', marginBottom: 15, marginTop: 15, height: 0.5, width: width }}></View>
                         <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row' }}>
                             <Ionicons size={20} name='chevron-forward' color={Thema == 'dark' && darkText} />
-                            <Text style={[{ fontSize: 16, color: Thema == 'dark' && darkText }]}> Enter URL manually</Text>
+                            <Text style={[{ fontSize: 16, color: Thema == 'dark' ? darkText : dark }]}> Enter URL manually</Text>
                         </View>
                         <View style={{ backgroundColor: 'gray', marginBottom: 15, marginTop: 15, height: 0.5, }}></View>
                         <View style={{ paddingLeft: 20, paddingRight: 20, alignItems: 'center', flexDirection: 'row', marginBottom: 20 }}>
                             <Ionicons size={20} name='qr-code' color={Thema == 'dark' && darkText} />
-                            <Text style={[{ fontSize: 16, color: Thema == 'dark' && darkText }]}>  Scan QR code</Text>
+                            <Text style={[{ fontSize: 16, color: Thema == 'dark' ? darkText : dark }]}>  Scan QR code</Text>
                         </View>
                     </View>
 
