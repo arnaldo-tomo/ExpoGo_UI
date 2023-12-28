@@ -2,6 +2,9 @@
 
 Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, utilizando a framework React Native. O Expo Go é uma ferramenta poderosa para o desenvolvimento rápido de aplicativos móveis, e este clone visa replicar suas funcionalidades principais.
 
+
+<img src="Screenshot/Screenshot_20231228-132053_Expo%20Go.jpg" width="160">  <img src="Screenshot/Screenshot_20231228-132100_Expo%20Go.jpg" width="160"> <img src="Screenshot/Screenshot_20231228-132056_Expo%20Go.jpg" width="160">  
+
 ## Recursos Principais:
 
 - **Navegação Navegativa:** Implementação de uma navegação intuitiva e eficiente para melhorar a experiência do usuário.
