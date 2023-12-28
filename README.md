@@ -1,4 +1,4 @@
-# Expo Go Clone com React Native
+# Expo Go Clone com React Native..
 
 Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, utilizando a framework React Native. O Expo Go é uma ferramenta poderosa para o desenvolvimento rápido de aplicativos móveis, e este clone visa replicar suas funcionalidades principais.
 
@@ -10,11 +10,11 @@ Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, 
 
 - **Integração com Expo:** Aproveitando as vantagens da infraestrutura Expo para acelerar o desenvolvimento e simplificar a configuração do projeto.
 
-## Como Contribuir:
+## Como Contribuir:.
 
 Se você estiver interessado em contribuir para este projeto, sinta-se à vontade para fazer um fork e abrir pull requests. Aceitamos contribuições de todos os níveis de habilidade!
 
-## Como Iniciar:
+## Como Iniciar::.
 
 1. Clone o repositório: `git clone https://github.com/arnaldo-tomo/ExpoGo_UI`
 2. Instale as dependências: `npm install`
