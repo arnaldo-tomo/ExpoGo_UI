@@ -13,7 +13,7 @@ Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, 
 
 - **Integração com Expo:** Aproveitando as vantagens da infraestrutura Expo para acelerar o desenvolvimento e simplificar a configuração do projeto.
 
-## Como Contribuir:.
+## Como Contribuir:..
 
 Se você estiver interessado em contribuir para este projeto, sinta-se à vontade para fazer um fork e abrir pull requests. Aceitamos contribuições de todos os níveis de habilidade!
 
