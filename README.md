@@ -34,4 +34,4 @@ Se você estiver interessado em contribuir para este projeto, sinta-se à vontad
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato através das Issues do GitHub.
 - **Email:** arnaldotomo@gmail.com
-- **Contacto/WhatsApp:** +258846474687
+- **Contacto/WhatsApp:** +258846474687.
