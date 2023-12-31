@@ -9,7 +9,7 @@ Este é um projeto que desenvolvi recentemente, um clone do aplicativo Expo Go, 
 
 - **Navegação Navegativa:** Implementação de uma navegação intuitiva e eficiente para melhorar a experiência do usuário.
 
-- **Componentes Personalizados:** Desenvolvimento de componentes personalizados para manter a consistência visual em toda a aplicação.
+- **Componentes Personalizados:** Desenvolvimento de componentes personalizados para manter a consistência visual em toda a aplicação...
 
 - **Integração com Expo:** Aproveitando as vantagens da infraestrutura Expo para acelerar o desenvolvimento e simplificar a configuração do projeto.
 
